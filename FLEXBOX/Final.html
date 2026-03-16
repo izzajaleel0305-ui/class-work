@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity - Pricing Exercise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background: #f4f4f4; font-family: 'Arial', sans-serif; margin: 0; padding: 20px; }
+        .title { text-align: center; margin-bottom: 30px; color: #333; }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .price-card {
+            background: #fff;
+            border-radius: 8px;
+            width: 260px; 
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .price-card h2 { font-size: 20px; margin-bottom: 5px; color: #444; }
+        .amount { font-size: 26px; font-weight: bold; margin: 10px 0; color: #000; }
+
+        .features { list-style: none; padding: 0; margin: 15px 0; text-align: left; }
+        .features li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            border-bottom: 1px solid #f9f9f9;
+        }
+
+        .features i { margin-right: 10px; font-size: 16px; }
+        .fa-square-check { color: #2ecc71; } /* ہرا ٹک */
+        .fa-circle-xmark { color: #e74c3c; } /* لال کراس */
+
+        .btn-signup {
+            display: block;
+            background: #27ae60; /* آپ کی فرمائش پر ہرا رنگ */
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 800px) {
+            .pricing-container { flex-direction: column; align-items: center; }
+            .price-card { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title">
+        <h1>Activity - Pricing Exercise</h1>
+    </div>
+
+    <div class="pricing-container">
+        <div class="price-card">
+            <h2>Basic</h2>
+            <div class="amount">$9.99/month</div>
+            <ul class="features">
+                <li><i class="fa-solid fa-square-check"></i> 10GB Storage</li>
+                <li><i class="fa-solid fa-square-check"></i> 1 User</li>
+                <li><i class="fa-solid fa-circle-xmark"></i> Support</li>
+            </ul>
+            <a href="#" class="btn-signup">Sign Up</a>
+        </div>
+
+        <div class="price-card">
+            <h2>Standard</h2>
+            <div class="amount">$19.99/month</div>
+            <ul class="features">
+                <li><i class="fa-solid fa-square-check"></i> 50GB Storage</li>
+                <li><i class="fa-solid fa-square-check"></i> 5 Users</li>
+                <li><i class="fa-solid fa-square-check"></i> Phone & Email Support</li>
+            </ul>
+            <a href="#" class="btn-signup">Sign Up</a>
+        </div>
+
+        <div class="price-card">
+            <h2>Premium</h2>
+            <div class="amount">$49.99/month</div>
+            <ul class="features">
+                <li><i class="fa-solid fa-square-check"></i> 100GB Storage</li>
+                <li><i class="fa-solid fa-square-check"></i> 10 Users</li>
+                <li><i class="fa-solid fa-square-check"></i> 24/7 Support</li>
+            </ul>
+            <a href="#" class="btn-signup">Sign Up</a>
+        </div>
+    </div>
+
+</body>
+</html>
